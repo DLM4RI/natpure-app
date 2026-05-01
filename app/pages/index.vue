@@ -25,7 +25,7 @@
           v-for="producto in obtenerProductosPorCategoria(cat.id)"
           :key="producto.id"
         >
-          <div style="width: 300px" class="ma-2">
+          <div class="ma-2 tarjeta-wrap">
             <tarjeta
               :producto="producto"
               @agregar-carrito="alAgregarCarrito"
@@ -58,4 +58,18 @@ const alAgregarCarrito = (producto) => {
 };
 </script>
 
-<style></style>
+<style>
+/* Ancho de las tarjetas en el carrusel por breakpoint */
+.tarjeta-wrap {
+  width: calc(50vw - 24px); /* móvil: 2 por fila aprox */
+}
+@media (min-width: 600px) {
+  .tarjeta-wrap { width: 240px; }
+}
+@media (min-width: 960px) {
+  .tarjeta-wrap { width: 280px; }
+}
+@media (min-width: 1280px) {
+  .tarjeta-wrap { width: 300px; }
+}
+</style>
