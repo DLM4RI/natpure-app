@@ -16,5 +16,9 @@ export default defineNuxtConfig({
         strict: false
       }
     }
-  }
+  },
+
+  app: {
+    baseURL: '/natpure-app/',
+  },
 })
