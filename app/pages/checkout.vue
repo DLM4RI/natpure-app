@@ -200,7 +200,7 @@
 import { ref, computed } from "vue";
 import { useRouter } from "vue-router";
 import { useProductosStore } from "~/stores/productos";
-import { ArrowBack, CheckCircle } from "@boxicons/vue";
+
 
 const router = useRouter();
 const productosStore = useProductosStore();

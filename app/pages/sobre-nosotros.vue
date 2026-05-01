@@ -65,7 +65,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Envelope, Phone, Map } from "@boxicons/vue";
+
 
 const equipo = [
   {

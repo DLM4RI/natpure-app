@@ -60,7 +60,7 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
-import { CartAlt, Home, Grid, InfoCircle } from "@boxicons/vue";
+
 import { useProductosStore } from '~/stores/productos';
 
 const drawer = ref(false);
