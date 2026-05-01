@@ -21,4 +21,5 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/natpure-app/',
   },
+  css: ['vuetify/styles'],
 })
