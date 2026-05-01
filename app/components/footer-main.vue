@@ -24,15 +24,15 @@
         <v-col cols="12" sm="6" md="4" class="text-center text-md-left">
           <h3 class="text-h6 font-weight-bold text-primary mb-4">Contacto</h3>
           <div class="d-flex align-center justify-center justify-md-start mb-3">
-            <v-icon color="primary" class="mr-3">mdi-email</v-icon>
+            <Envelope color="primary" class="mr-3 text-primary" style="font-size: 1.25rem;" />
             <span class="text-body-1 text-medium-emphasis">mc802214@gmail.com</span>
           </div>
           <div class="d-flex align-center justify-center justify-md-start mb-3">
-            <v-icon color="primary" class="mr-3">mdi-phone</v-icon>
+            <Phone color="primary" class="mr-3 text-primary" style="font-size: 1.25rem;" />
             <span class="text-body-1 text-medium-emphasis">+57 3053556160</span>
           </div>
           <div class="d-flex align-center justify-center justify-md-start">
-            <v-icon color="primary" class="mr-3">mdi-map-marker</v-icon>
+            <Map color="primary" class="mr-3 text-primary" style="font-size: 1.25rem;" />
             <span class="text-body-1 text-medium-emphasis">Monteria, Cordoba, Colombia</span>
           </div>
         </v-col>
@@ -49,6 +49,7 @@
 </template>
 
 <script setup>
+import { Envelope, Phone, Map } from "@boxicons/vue";
 </script>
 
 <style scoped>

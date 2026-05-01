@@ -46,15 +46,15 @@
           <v-card-text class="pa-6 text-body-1 text-medium-emphasis">
             <p class="mb-4">Para más información, contáctanos en:</p>
             <div class="d-flex align-center mb-2">
-              <v-icon color="primary" class="mr-2">mdi-email</v-icon>
+              <Envelope color="primary" class="mr-2 text-primary" style="font-size: 1.25rem;" />
               <span>Email: mc802214@gmail.com</span>
             </div>
             <div class="d-flex align-center mb-2">
-              <v-icon color="primary" class="mr-2">mdi-phone</v-icon>
+              <Phone color="primary" class="mr-2 text-primary" style="font-size: 1.25rem;" />
               <span>Teléfono: +57 3053556160</span>
             </div>
             <div class="d-flex align-center">
-              <v-icon color="primary" class="mr-2">mdi-map-marker</v-icon>
+              <Map color="primary" class="mr-2 text-primary" style="font-size: 1.25rem;" />
               <span>Dirección: Monteria, Cordoba, Colombia</span>
             </div>
           </v-card-text>
@@ -65,6 +65,8 @@
 </template>
 
 <script lang="ts" setup>
+import { Envelope, Phone, Map } from "@boxicons/vue";
+
 const equipo = [
   {
     id: 1,
@@ -72,7 +74,7 @@ const equipo = [
     rol: "Base de datos",
     descripcion:
       "Especialista en arquitectura y optimización de bases de datos. Fabio asegura que toda la información fluya de manera segura, rápida y escalable, permitiendo a nuestra plataforma manejar grandes volúmenes de datos sin despeinarse.",
-    imagen: "/imgs/fabio.jpeg",
+    imagen: "/natpure-app/imgs/fabio.jpeg",
   },
   {
     id: 2,
@@ -80,7 +82,7 @@ const equipo = [
     rol: "Desarrollador",
     descripcion:
       "Apasionado por la tecnología y la creación de soluciones eficientes. Mario es el cerebro detrás de la lógica de nuestra aplicación, enfocándose siempre en un código limpio, estructurado y de alto rendimiento.",
-    imagen: "/imgs/mario.jpeg",
+    imagen: "/natpure-app/imgs/mario.jpeg",
   },
   {
     id: 3,
@@ -88,7 +90,7 @@ const equipo = [
     rol: "Diseñadora",
     descripcion:
       "Con un ojo impecable para el detalle y la estética, Andrea transforma conceptos complejos en interfaces intuitivas y hermosas. Su objetivo principal es asegurar una experiencia de usuario que sea funcional y visualmente espectacular.",
-    imagen: "/imgs/andrea.jpeg",
+    imagen: "/natpure-app/imgs/andrea.jpeg",
   },
 ];
 </script>

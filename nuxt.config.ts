@@ -1,5 +1,3 @@
-import vuetify from 'vite-plugin-vuetify'
-
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -12,14 +10,14 @@ export default defineNuxtConfig({
 
   vite: {
     server: {
-      fs: {
-        strict: false
-      }
-    }
+      fs: { strict: false }
+    },
+    build: {
+      cssMinify: false,
+    },
   },
 
   app: {
     baseURL: '/natpure-app/',
   },
-  css: ['vuetify/styles'],
 })

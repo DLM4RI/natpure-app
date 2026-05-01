@@ -13,8 +13,8 @@
             Categorías
           </v-card-title>
           <v-list bg-color="transparent">
-            <v-list-item 
-              v-for="cat in categorias" 
+            <v-list-item
+              v-for="cat in categorias"
               :key="cat.valor"
               :active="categoriaActiva === cat.valor"
               color="primary"
@@ -38,7 +38,10 @@
             md="6"
             lg="4"
           >
-            <tarjeta :producto="producto" @agregar-carrito="alAgregarCarrito"></tarjeta>
+            <tarjeta
+              :producto="producto"
+              @agregar-carrito="alAgregarCarrito"
+            ></tarjeta>
           </v-col>
         </manejador-cards>
       </v-col>
@@ -47,28 +50,28 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
-import { useProductosStore } from '~/stores/productos'
+import { computed } from "vue";
+import { useProductosStore } from "~/stores/productos";
 
-const productosStore = useProductosStore()
+const productosStore = useProductosStore();
 
 const categorias = [
-  { texto: 'Todos', valor: 'todos' },
-  { texto: 'Naturales', valor: 'naturales' },
-  { texto: 'Orgánicos', valor: 'organicos' },
-  { texto: 'Suplementos', valor: 'suplementos' }
-]
+  { texto: "Todos", valor: "todos" },
+  { texto: "Naturales", valor: "naturales" },
+  { texto: "Orgánicos", valor: "organicos" },
+  { texto: "Suplementos", valor: "suplementos" },
+];
 
-const categoriaActiva = computed(() => productosStore.categoriaActual)
-const productosFiltrados = computed(() => productosStore.productosFiltrados)
+const categoriaActiva = computed(() => productosStore.categoriaActual);
+const productosFiltrados = computed(() => productosStore.productosFiltrados);
 
 const alAgregarCarrito = (producto) => {
-  productosStore.agregarAlCarrito(producto)
-}
+  productosStore.agregarAlCarrito(producto);
+};
 
 const alFiltrarCategoria = (categoria) => {
-  productosStore.filtrarCategoria(categoria)
-}
+  productosStore.filtrarCategoria(categoria);
+};
 </script>
 
 <style></style>

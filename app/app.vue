@@ -10,8 +10,8 @@
 
 <script lang="ts" setup>
 const onAbrirCarrito = () => {
-  console.log('Abrir carrito desde app global')
-}
+  console.log("Abrir carrito desde app global");
+};
 </script>
 
 <style></style>
