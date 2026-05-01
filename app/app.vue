@@ -1,27 +1,17 @@
 <template>
-  <v-app class="bg-grey-lighten-4">
-    <v-main class="">
-      <v-container>
-        <barra-main></barra-main>
-
-        <promos-card></promos-card>
-        <manejador-cards>
-          <tarjeta></tarjeta>
-          <tarjeta></tarjeta>
-          <tarjeta></tarjeta>
-          <tarjeta></tarjeta>
-        </manejador-cards>
-        <manejador-cards>
-          <tarjeta></tarjeta>
-          <tarjeta></tarjeta>
-          <tarjeta></tarjeta>
-          <tarjeta></tarjeta>
-        </manejador-cards>
-      </v-container>
+  <v-app class="bg-background">
+    <barra-main @abrir-carrito="onAbrirCarrito"></barra-main>
+    <v-main>
+      <NuxtPage />
     </v-main>
+    <footer-main></footer-main>
   </v-app>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const onAbrirCarrito = () => {
+  console.log('Abrir carrito desde app global')
+}
+</script>
 
 <style></style>
